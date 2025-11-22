@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-teal-300: #32B8C6;
+  --color-teal-400: #2DA6B2;
+  --color-teal-500: #21808D;
+  --color-teal-600: #1D7480;
+  --color-teal-700: #1A6873;
+
+  --color-neutral-50: #FAFAFA;
+  --color-neutral-100: #F5F5F5;
+  --color-neutral-200: #E5E5E5;
+  --color-neutral-300: #D4D4D4;
+  --color-neutral-400: #A3A3A3;
+  --color-neutral-500: #737373;
+  --color-neutral-600: #525252;
+  --color-neutral-700: #404040;
+  --color-neutral-800: #262626;
+  --color-neutral-900: #171717;
+
+  --color-emerald-500: #10B981;
+  --color-rose-500: #F43F5E;
+
+  --color-background: var(--color-neutral-50);
+  --color-surface: #FFFFFF;
+  --color-surface-secondary: var(--color-neutral-100);
+  --color-text-primary: var(--color-neutral-900);
+  --color-text-secondary: var(--color-neutral-600);
+  --color-border: var(--color-neutral-200);
+  --color-primary: var(--color-teal-500);
+  --color-primary-hover: var(--color-teal-600);
+  --color-success: var(--color-emerald-500);
+  --color-success-bg: rgba(16, 185, 129, 0.1);
+  --color-error: var(--color-rose-500);
+  --color-error-bg: rgba(244, 63, 94, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--color-neutral-900);
+    --color-surface: var(--color-neutral-800);
+    --color-surface-secondary: var(--color-neutral-700);
+    --color-text-primary: var(--color-neutral-50);
+    --color-text-secondary: var(--color-neutral-400);
+    --color-border: var(--color-neutral-700);
+    --color-primary: var(--color-teal-400);
+    --color-primary-hover: var(--color-teal-300);
+  }
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--color-background);
+  color: var(--color-text-primary);
+}
+
+input, select, textarea {
+  font-family: inherit;
+}
+
+button {
+  font-family: inherit;
+}
